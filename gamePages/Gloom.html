@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariel Cthwe - Gloom</title>
+    <link rel="stylesheet" href="../css/gamePagestyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+<body>
+
+    <div class="container">
+        <h1 id="name">Ariel Cthwe</h1>
+
+        <div class="navbar">
+            <a href="../index.html">Home</a> <span class="separator">/</span>
+            <a href="../gamedesign.html">Game Design</a> <span class="separator">/</span>
+            <a href="../audiodesign.html">Audio Design</a>
+        </div>
+    </div>
+
+    <h2 class="project-title">Gloom</h2>
+
+    <h2>Demo Video</h2>
+
+
+    <div class="video-wrapper">
+                <iframe 
+                width="1000" 
+                height="608" 
+                src="https://www.youtube.com/embed/9bKpNqsiaIY?si=iD81oLkvy0Saqk3o" 
+                style="filter: brightness(3.0);"
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; audio-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+                </iframe>
+    </div>
+    
+    
+    <section class="project-page-content">
+
+        <h3>About This Project</h3>
+            //repla
+            <p>
+                In Gloom you play as John Ra, a man who lives in an old, run-down apartment complex. A couple of months after moving in, 
+                he’s felt as if something was lurking in the shadows, always watching him, but brushes it off as nothing. One day, as 
+                John goes to check on the mail, his elderly neighbor, Albert, asks him if he could retrieve a borrowed item from your upstairs neighbor. <br><br>
+
+                Heading upstairs, you notice that something in the apartment is off. Your neighbor is nowhere to be found, but mannequins are scattered 
+                around the apartment, with one mannequin laid out on a table that seems to slowly twitch. <br><br>
+
+                Traversing your apartment complex, manage your sanity. As your sanity decreases, things around you start to warp and change as 
+                apparitions of a dark creature stalk you. Heal yourself and clear your mind by taking your medication and staying in the light 
+                to regain your sanity. Are you afraid of the dark, and can you escape the creature within?
+
+            </p>
+            
+            <p>
+               On the Gloom project, a team game project, I was responsible for designing and implementing core gameplay mechanics using <b>Unreal Engine 5.6</b> and 
+               <b>Unreal Engine 5's Blueprint system</b>. In addition, setting up the <b>Perforce</b> server on my PC to gain experience using an industry-standard version 
+               control system for collaborative game design. I developed the fixed camera system used throughout the game, either in open areas or on doors, to provide an 
+               immersive experience similar to older horror game titles like Resident Evil and Silent Hill, the inventory UI, and created the interaction system with lock doors
+               and inventory items, level design for 2 of the three levels, interfaces for the different game states, such as the pause menu and game over screen, and optimizing 
+               various gameplay elements to ensure smooth performance.
+            </p>
+
+            <img src="../media/Heebie Jeebie.png" alt="">
+
+            <h3>My Process & Contributions</h3>
+            
+            <p>
+                My workflow began with extensive research into classic survival horror games to understand their mechanics and atmosphere. I started by sketching out 
+                ideas for the fixed-camera system, ensuring it would enhance the horror experience. Using Unreal Engine's Blueprint system, I prototyped these mechanics, 
+                iterating based on team feedback. One of the main challenges was creating a seamless fixed-camera system that could adapt to different environments and be
+                 mounted on doors. To overcome this, I began researching the Unreal Engine documentation and community forums to find the optimal design solution for 
+                 the camera to work with the door interactions, either as a child actor of the doors or by placing the camera on the doors themselves. This involved 
+                 prototyping different approaches and testing them to ensure they met the project's requirements. The children's-actor approach did work 
+                 as intended, which allow my to create two child actor component which inherit from the BP_FixedCamera can generate two to use on either side of the door. 
+                 Additionally, began setting trigger volumes to switch between cameras as the player navigated through the levels, ensuring smooth transitions and 
+                 maintaining immersion, and keeping track of which camera is active and switching the camera when the player uses the door again.
+            
+            <img src="../media/bp.png" alt="">
+            <img src="../media/viewport.png" alt="">
+
+            <h3>Results & Takeaways</h3>
+            
+            <p>
+                This project significantly enhanced my skills in Unreal Engine 5 and Blueprint scripting, particularly in developing complex gameplay mechanics. 
+                The fixed-camera system added a nostalgic yet effective layer of horror to the game, which was well-received during playtesting. I learned the importance 
+                of iterative design and team collaboration in game design. The experience with Perforce also provided valuable insights into version control practices, 
+                essential for any game design project. Overall, Gloom was a rewarding experience that honed my technical skills and deepened my understanding of 
+                survival horror game design.
+            </p>
+
+    </section>
+    
+
+    <footer>
+
+        <p>&copy; 2025 by Ariel Cthwe. All rights reserved.</p>
+    
+    </footer>
+
+</body>
+</html>
